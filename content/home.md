@@ -7,4 +7,3 @@ draft: false
 My name Jer
 ![floppa](floppa_poly.png)
 [about](about.md)
-some changes y
