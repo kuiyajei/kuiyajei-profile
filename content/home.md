@@ -5,5 +5,5 @@ draft: false
 ---
 
 My name Jer
-![floppa](floppa_poly.png)
+![floppa](/static/img/floppa_poly.png)
 [about](about.md)
