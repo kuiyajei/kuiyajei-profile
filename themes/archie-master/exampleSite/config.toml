@@ -1,26 +1,15 @@
-baseURL = '/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'archie-master'
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-
-# Code Highlight
+baseURL = "https://example.com"
+languageCode = "en-us"
+title = "Archie"
+theme="archie"
+copyright = "© Athul"
 pygmentsstyle = "monokai"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
-
-paginate=3 # articles per page
-
 [params]
-	mode="toggle" # color-mode → light,dark,toggle or auto
-	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
+	mode="auto"
+	useCDN=false
 	subtitle = "Minimal and Clean [blog theme for Hugo](https://github.com/athul/archie)"
-
-# Social Tags
 
 [[params.social]]
 name = "GitHub"
@@ -30,15 +19,12 @@ url = "https://github.com/athul/archie"
 [[params.social]]
 name = "Twitter"
 icon = "twitter"
-url = "https://twitter.com/athulcajay/"
+url = "https://github.com/athulcajay/"
 
 [[params.social]]
 name = "GitLab"
 icon = "gitlab"
 url = "https://gitlab.com/athul/"
-
-# Main menu Items
-
 [[menu.main]]
 name = "Home"
 url = "/"
