@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on UNDER CONSTRUCTION</title>
+    <link>https://kuiyajei.github.io/tags/</link>
+    <description>Recent content in Tags on UNDER CONSTRUCTION</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Sep 2022 08:00:46 +0200</lastBuildDate><atom:link href="https://kuiyajei.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>laravel</title>
+      <link>https://kuiyajei.github.io/tags/laravel/</link>
+      <pubDate>Tue, 13 Sep 2022 08:00:46 +0200</pubDate>
+      
+      <guid>https://kuiyajei.github.io/tags/laravel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Code</title>
+      <link>https://kuiyajei.github.io/tags/code/</link>
+      <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kuiyajei.github.io/tags/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Procrastinating</title>
+      <link>https://kuiyajei.github.io/tags/procrastinating/</link>
+      <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
+      
+      <guid>https://kuiyajei.github.io/tags/procrastinating/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Space</title>
+      <link>https://kuiyajei.github.io/tags/space/</link>
+      <pubDate>Sun, 18 Mar 2018 12:13:30 +0530</pubDate>
+      
+      <guid>https://kuiyajei.github.io/tags/space/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
