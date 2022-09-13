@@ -1,6 +1,6 @@
 baseURL = 'https://kuiyajei.github.io/'
 languageCode = 'en-us'
-title = 'UNDER CONSTRUCTION'
+title = 'Jeriのページ'
 theme = 'archie-master'
 canonifyURLs = 'true'
 
@@ -46,16 +46,6 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-name = "All posts"
-url = "/posts"
-weight = 2
-
-[[menu.main]]
 name = "About"
-url = "/about"
+url = "/profile/about"
 weight = 3
-
-[[menu.main]]
-name = "Tags"
-url = "/tags"
-weight = 4

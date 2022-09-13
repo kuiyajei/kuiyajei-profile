@@ -5,5 +5,5 @@ draft: false
 tags: 'laravel'
 ---
 
-[fuc go back]({{< ref "summary.md" >}} "fuc go back") <br/>
+[Back to Home]({{< ref "/" >}} "Back to Home") <br/>
 nothing here yet :)
