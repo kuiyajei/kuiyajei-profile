@@ -8,6 +8,7 @@ tags: ['laravel']
 [Back to Home]({{< ref "home.md" >}} "Back to Home")
 
 ![floppa](/laravel/images/floppa_poly.png)  <br/>
+<img src="/laravel/images/floppa_poly.png" alt="floppa" style="width:42px;height:42px;">
 *my notes have references to .NET Core so this might not actually be helpful*
 
 Based **TraversyMedia's Laravel Crash Course** | Uploaded: Apr. 26, 2022: [[link]](https://youtu.be/MYyJ4PuL4pY)
