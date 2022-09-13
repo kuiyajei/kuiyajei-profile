@@ -2,6 +2,7 @@ baseURL = 'https://kuiyajei.github.io/'
 languageCode = 'en-us'
 title = 'UNDER CONSTRUCTION'
 theme = 'archie-master'
+canonifyURLs = 'true'
 
 [markup]
   [markup.goldmark]
