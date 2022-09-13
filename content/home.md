@@ -8,6 +8,6 @@ In here you'll find out more about me and a bunch of dev-related notes I kept fo
 
 These notes aren't very articulate, mind you. All descriptions and explanations found here are written in simple language. Not because I want you to understand, but because my vocabulary's just lacking :P
 
-## Links
+## Links inside the website
 - [About](/about)
-- [Laravel > Basics]({{< ref "content/laravel/basics.md" >}} "Laravel > Basics")
+- [Laravel > Cheat Sheet / Summary]({{< ref "content/laravel/summary.md" >}} "Laravel > Cheat Sheet / Summary")
