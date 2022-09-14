@@ -7,68 +7,51 @@ tags: ['laravel','summary']
 
 [Back to Home]({{< ref "/" >}} "Back to Home")
 
-![floppa](/laravel/images/floppa_poly.png)  <br/>
+# This not a full guide. 
+Not everything will be explained in full detail.
+
+<!-- ![floppa](/laravel/images/floppa_poly.png)  <br/> -->
+
+These notes are based on <a href="https://youtu.be/MYyJ4PuL4pY" target="_blank">TraversyMedia's Laravel Crash Course</a> | Uploaded: Apr. 26, 2022  
+and a <a href="https://www.udemy.com/course/laravel-build-complete-inventory-management-system/" target="_blank">Udemy Course</a>
+
 *my notes have references to .NET Core so this might not actually be helpful*
 
-Based **TraversyMedia's Laravel Crash Course** | Uploaded: Apr. 26, 2022: [[link]](https://youtu.be/MYyJ4PuL4pY)
+## List of other pages related to laravel found in this site.
+* [Laravel > Structure]({{< ref "laravel/structure.md" >}} "Laravel > Structure")
+* [Laravel > Concepts]({{< ref "laravel/concepts.md" >}} "Laravel > Concepts")
+* [Laravel > CLI]({{< ref "laravel/cli.md" >}} "Laravel > CLI")
+* [Laravel > Themes]({{< ref "laravel/themes.md" >}} "Laravel > Themes")
 
 ## Installation for Windows
 ---
 Software you need...
 - something to run Linux commands, so install GitBash (the documentation tells you to get Docker but don't mind that)
 - Composer
-- to run the following in a terminal (assuming you're going to use Laravel for quite a while and it's not just a one time thing):
+- to run the following in a terminal - assuming you're going to use Laravel for quite a while and it's not just a one time thing:
   ``composer global require laravel/installer``.
   Then in the directory where you want to work on, open a terminal there and ``laravel new name-of-your-app``. If it's the latter, then do this instead of the above ``composer create-project laravel/laravel name-of-your-app``.
+- Laravel Breeze: because you'll most likely use it for simple default login/auth
+  1. ) inside your project > terminal > type in ``composer require laravel/breeze --dev``
+  2. ) followed by ``php artisan breeze:install``
+  3. ) followed by ``npm install``
+  4. ) followed by ``npm run dev`` then stop that shet in the terminal (Ctrl + C > y)
+  5. ) followed by `php artisan migrate` when your DB's connected
 
-## File Structure
----
-* **Views** - resources/views/[name].blade.php
-* **Routes** - Where we'll load in Views and Controllers *(you know how in .NET Core's MVC Controllers have IActionResult? This is pretty similar to that, except the return part's separated to here.)*
-* **Models** - app/Models
-  * (Manual) - go to Models folder and create a file there. You need to add other stuff like namespace and A LOT of other required stuff, but like, w h y . . . ? When you have...
-  * (Fancy/Best) - ``php artisan make:model name-of-model``
-* **Database Setup**
-  1. ) config/database.php ``'default' => env('DB_CONNECTION', 'mysql'),`` mysql is replacable if need be
-  2. ) you can configure other stuff in ".env", and [click here to setup your MySQL](https://youtu.be/MYyJ4PuL4pY?t=2754) unless you have...
-  3. ) XAMPP, in which case all you need to do is run APACHE and MySQL. MySQL -> click Admin on the UI 
-  4. ) Make sure to edit DB_DATABASE in ".env" if you have a different name for the database you're going to use
-* **Migrations** - database/migrations 
-  * ***REMINDER:*** The tutorial at first shows you to migrate and seed, and not just migrate the model.
-  * ***also:*** From the way it looks, it migrates EVERYTHING inside the migrations folder - at least initially (this is just an assumption)
-* **Seeding** - database/seeders
-* **Themes** - setup's long, click [(here)]({{< ref "laravel/themes.md" >}} "(link)") when you're ready | <a href="https://youtu.be/MYyJ4PuL4pY?t=4318" target="_blank">[video link]</a>
+### Importing an existing project
 
-## Laravel Programming Concepts
----
-* **Wild Cards** - Similar to asp-route-id
-* **Route Constraints** - ``->where('param', 'regex stuff here')``, useful for validations
-* **Debugging - dd** - Shows you what's passed in
-* **Debugging - ddd** - Detailed debug info
-* **Directives @** - oh hey, it's like the front-end of .NET Core except you have to put them at the start and end of something like a foreach
-  * *@php* can sometimes be useful if you can't perform stuff on the controller or route
-* **Request & Query** - Useful for search functions
-* **Layout & Sections** - Useful for headers and footers. This one's kinda confusing <a href="https://youtu.be/MYyJ4PuL4pY?t=4099" target="_blank">so here</a>
-  * In the layout:
-    * ``@yield('matching-content-name')`` this is where you want the view to be displayed at when the view extends the layout
-  * In the View extending the layout: 
-    * ``@extends('layout-name')`` put this on the very top
-    * ``@section('content-name')`` and ``@endsection`` then wrap that around the content you want as a section
-  * **Components** - useful if you want to pass in stuff...? <a href="https://www.educba.com/laravel-components/" target="_blank">[link]</a>
+Assuming that you have done the initial installations and exported the files (if zipped)...
+1. Open XAMPP and start Apache + MySQL
+2. Databases tab > Create
+3. Imports tab
+4. Get ``.sql`` file  > Choose that as file to import
+5. Inside ``.env`` > ``DB_DATABASE=name-of-newly-created-db``
+6. Inside project file enter the following in a terminal
+   1. php artisan config:cache
+   2. php artisan cache:clear
+   3. php artisan view:clear
 
-## Relevant CLI commands for Laravel
----
-Write ``php artisan`` space...
-* ``serve`` - run the site locally
-* ``make:migration name-of-migration`` - add migration
-* `` migrate`` - migrates the latest
-* `` db:seed`` - seed
-  * ``migrate:refresh`` - can be useful if you suddenly edit or remove data in the seed
-  * *(don't put a space here)* ``:migrate:refresh`` --seed refresh && seed 
-* ``make:model name-of-model`` - make a model
-* 
-
-## Optional but cool (stuff I'm not familiar with even outside of the regular MVC sh*t)
+### Optional but cool (stuff I'm not familiar with even outside of the regular MVC sh*t)
 ---
 * **Faker** - I really am not familiar with this <a href="https://youtu.be/MYyJ4PuL4pY?t=3791" target="_blank">so...</a>
   * **php artisan make:factory name-of-factory**
@@ -76,7 +59,7 @@ Write ``php artisan`` space...
     * sentence can be replaced by other formats found <a href="https://github.com/fzaninotto/Faker#table-of-contents" target="_blank">here</a>
 
 
-## Useful extensions
+### Useful extensions
 ---
 * **PHP Namespace Resolver** - Really useful for importing libraries and classes that act like VS' auto-fill feature
 * **PHP Intelephense** - Good for PHP dev in general

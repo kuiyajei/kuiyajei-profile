@@ -2,8 +2,8 @@
 title: "Themes"
 date: 2022-09-13T08:00:46+02:00
 draft: false
-tags: 'laravel'
+tags: ['laravel']
 ---
 
-[Back to Home]({{< ref "/" >}} "Back to Home") <br/>
+[Back to Home]({{< ref "/laravel/summary.md" >}} "fuc go bac") <br/>
 nothing here yet :)

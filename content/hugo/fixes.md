@@ -5,6 +5,8 @@ draft: false
 tags: ['hugo','fix','summary']
 ---
 
+[Back to Home]({{< ref "/" >}} "fuc go bac") <br/>
+
 # Summary
 
 If you ever encounter some basic f**k-ups while building your blog (or something similar) and you can't find the solution online, just come back here. Hugo doesn't get much attention so it's hard finding actual solutioons :(
