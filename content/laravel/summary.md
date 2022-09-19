@@ -17,13 +17,14 @@ and a <a href="https://www.udemy.com/course/laravel-build-complete-inventory-man
 
 *my notes have references to .NET Core so this might not actually be helpful*
 
-## List of other pages related to laravel found in this site.
+## Stuff from laravel broken down
 * [Laravel > Structure]({{< ref "laravel/structure.md" >}} "Laravel > Structure")
-* [Laravel > Concepts]({{< ref "laravel/concepts.md" >}} "Laravel > Concepts")
-* [Laravel > CLI]({{< ref "laravel/cli.md" >}} "Laravel > CLI")
+* [Laravel > Concepts & Terminologies]({{< ref "laravel/concepts.md" >}} "Laravel > Concepts")
+* [Laravel > Artisan CLI]({{< ref "laravel/cli.md" >}} "Laravel > CLI")
 * [Laravel > Themes]({{< ref "laravel/themes.md" >}} "Laravel > Themes")
+* [Laravel > Fixes & Troubleshooting]({{< ref "laravel/fixes.md" >}} "Laravel > Fixes & Troubleshooting")
 
-## Installation for Windows
+## Installation for Windows + *Some* Initial Setup
 ---
 Software you need...
 - something to run Linux commands, so install GitBash (the documentation tells you to get Docker but don't mind that)
@@ -38,7 +39,7 @@ Software you need...
   4. ) followed by ``npm run dev`` then stop that shet in the terminal (Ctrl + C > y)
   5. ) followed by `php artisan migrate` when your DB's connected
 
-### Importing an existing project
+### Importing an existing project / DB Cleaning
 
 Assuming that you have done the initial installations and exported the files (if zipped)...
 1. Open XAMPP and start Apache + MySQL
@@ -47,9 +48,11 @@ Assuming that you have done the initial installations and exported the files (if
 4. Get ``.sql`` file  > Choose that as file to import
 5. Inside ``.env`` > ``DB_DATABASE=name-of-newly-created-db``
 6. Inside project file enter the following in a terminal
-   1. php artisan config:cache
-   2. php artisan cache:clear
-   3. php artisan view:clear
+   1. `php artisan config:cache`
+   2. `php artisan cache:clear`
+   3. `php artisan view:clear`
+   4. `php artisan migrate`
+   5. You can also `php artisan db:wipe` and steps 1-4 in case you're worried about making changes and the whole thing just doesn't work for some reason.
 
 ### Optional but cool (stuff I'm not familiar with even outside of the regular MVC sh*t)
 ---

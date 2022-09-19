@@ -9,7 +9,7 @@ tags: ['hugo','fix','summary']
 
 # Summary
 
-If you ever encounter some basic f**k-ups while building your blog (or something similar) and you can't find the solution online, just come back here. Hugo doesn't get much attention so it's hard finding actual solutioons :(
+If you ever encounter some basic f**k-ups while building your blog (or something similar) and you can't find the solution online, just come back here. Hugo doesn't get much traction so it's hard finding actual solutions :(
 
 # The ***TRUE*** FAQ regarding fixes. Make sure to look at the date, though. This might go unupdated in the future.
 

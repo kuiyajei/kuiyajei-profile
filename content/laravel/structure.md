@@ -5,9 +5,16 @@ draft: false
 tags: ['laravel']
 ---
 
-[Back to Home]({{< ref "/laravel/summary.md" >}} "Go Back.")
+[Go Back]({{< ref "/laravel/summary.md" >}} "getdafucoutahere")
 
-## File Structure
+# Contents
+* <a href="#overview">General File Structure Overview</a>
+* <a href="#note">Note when you're "migrating" from another framework to this new shithole :)</a>
+* <a href="#shortcuts">Shortcuts</a>
+
+<div id="overview"></div>
+
+# General File Structure Overview
 ---
 * **Views** - resources/views/[name].blade.php
 * **Routes** - Where we'll load in Views and Controllers *(you know how in .NET Core's MVC Controllers have IActionResult? This is pretty similar to that, except the return part's separated to here.)*
@@ -19,7 +26,7 @@ tags: ['laravel']
   * OR if you have the cool extensions it'll import the appropriate files for you as you type the code
   * `Route::get('/name-of-view', [NameOfController::class, 'MethodName']);` for singular routes
   * `Route::controller(testController::class)->group(function () { });` and inside the curly braces `Route::get('/name-of-view','MethodName')->('name-for-long-URLs.page');` to group a controller with multiple methods
-* Middleware - the security guard / validations boi; can be used in routing
+* **Middleware** - the security guard / validations boi; can be used in routing;found in Http/Middleware
 * **Database Setup**
   1. ) config/database.php ``'default' => env('DB_CONNECTION', 'mysql'),`` mysql is replacable if need be
      1. ) you can configure other stuff in ".env", and [click here to setup your MySQL](https://youtu.be/MYyJ4PuL4pY?t=2754) unless you have...
@@ -30,3 +37,13 @@ tags: ['laravel']
   * ***also:*** From the way it looks, it migrates EVERYTHING inside the migrations folder - at least initially (this is just an assumption)
 * **Seeding** - database/seeders
 * **Themes** - setup's long, click [(here)]({{< ref "laravel/themes.md" >}} "(link)") when you're ready | <a href="https://youtu.be/MYyJ4PuL4pY?t=4318" target="_blank">[video link]</a>
+
+<div id="note"></div>
+
+## Something to note when you're *"migrating"* from another framework to this new shithole :)
+* Columns in a table are declared in the migrations
+* Tables/Entities are migrated when you EXPLICITLY type in `make:migration create_NAME-OF-YOUR-MODELs_table`, yes, plural
+  * OR when you're just creating a new model `make:model NameOfModel -m` // I think -m means migration
+  * TRY this out as well `make:model -mrc EntitysName` <- the model will become singular but plural when migrated
+    * it *should* make a controller with resource functions in it + a model
+    * <a href="https://youtu.be/2bz5eleBj98?t=3600" target="_blank">[video link]</a>
