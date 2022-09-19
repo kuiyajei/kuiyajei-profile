@@ -9,9 +9,9 @@ tags: ['hugo','fix','summary']
 
 # Summary
 
-If you ever encounter some basic f**k-ups while building your blog (or something similar) and you can't find the solution online, just come back here. Hugo doesn't get much traction so it's hard finding actual solutions :(
+If you ever encounter some f**k-ups while building your blog (or something similar) and you can't find the solution online, come look here. Hugo doesn't get much traction so it's hard finding actual solutions :(
 
-# The ***TRUE*** FAQ regarding fixes. Make sure to look at the date, though. This might go unupdated in the future.
+# The ***TRUE*** FAQ regarding fixes. Make sure to look at the date though. This might not be so updated.
 
 FAQ:
 * A theme's layout might override your home page. To counter that, just make an ``index.html`` inside *your* ``layouts`` folder. If you want to go back to the home page using a link, just reference your baseURL value. 
@@ -23,9 +23,10 @@ FAQ:
   2. ) Use the html img tag in your .md file under that subfolder (not images) to use your image. Example:``<img src="/posts/images/your-image.PNG" alt="img-description">``
   Note: the file extension is case-sensitive, meaning you might have to put ``png`` instead of ``PNG``
 * True GitHub Pages deployment tutorial:
-  1. ) ``git init`` your sh*t then 
+  1. ) ``git init`` your sh*t 
   2. ) Add local repository in GitHub Desktop to make your life easier and publish it; side note - this is not a git tutorial so look into it if you don't follow
   3. ) Config your ``baseURL`` with the value of ``https://<YOUR-GITHUB-USERNAME>.github.io`` or ``https://<YOUR-GITHUB-USERNAME>.github.io/<REPOSITORY_NAME>``
   4. ) Also add ``canonifyURLs = 'true'`` inside the config or else images won't render except for the local server. Weird.
-  5. ) Go to your remote repository - **make sure it's public** - and go to Settings > Pages > Source: GitHub Actions > Click the Hugo option > Commit and adjust accordingly if you want a different branch to be published.
-  6. ) Done!
+  5. ) In the terminal (inside your project) type `hugo`. This will create a bunch of files so your site is deploy-ready.
+  6. ) Go to your remote repository - **make sure it's public** - and go to Settings > Pages > Source: GitHub Actions > Click the Hugo option > Commit and adjust accordingly if you want a different branch to be published.
+  7. ) Done!
