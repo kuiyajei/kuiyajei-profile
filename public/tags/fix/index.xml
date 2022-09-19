@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fix on Jeriのページ</title>
+    <link>https://kuiyajei.github.io/tags/fix/</link>
+    <description>Recent content in fix on Jeriのページ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Sep 2022 14:45:08 +0200</lastBuildDate><atom:link href="https://kuiyajei.github.io/tags/fix/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FAQ Fixes</title>
+      <link>https://kuiyajei.github.io/hugo/fixes/</link>
+      <pubDate>Tue, 13 Sep 2022 14:45:08 +0200</pubDate>
+      
+      <guid>https://kuiyajei.github.io/hugo/fixes/</guid>
+      <description>Back to Home Summary If you ever encounter some basic f**k-ups while building your blog (or something similar) and you can&amp;rsquo;t find the solution online, just come back here. Hugo doesn&amp;rsquo;t get much traction so it&amp;rsquo;s hard finding actual solutions :(
+The TRUE FAQ regarding fixes. Make sure to look at the date, though. This might go unupdated in the future. FAQ:
+A theme&amp;rsquo;s layout might override your home page. To counter that, just make an index.</description>
+    </item>
+    
+  </channel>
+</rss>

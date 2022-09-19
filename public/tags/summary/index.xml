@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>summary on Jeriのページ</title>
+    <link>https://kuiyajei.github.io/tags/summary/</link>
+    <description>Recent content in summary on Jeriのページ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Sep 2022 14:45:08 +0200</lastBuildDate><atom:link href="https://kuiyajei.github.io/tags/summary/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FAQ Fixes</title>
+      <link>https://kuiyajei.github.io/hugo/fixes/</link>
+      <pubDate>Tue, 13 Sep 2022 14:45:08 +0200</pubDate>
+      
+      <guid>https://kuiyajei.github.io/hugo/fixes/</guid>
+      <description>Back to Home Summary If you ever encounter some basic f**k-ups while building your blog (or something similar) and you can&amp;rsquo;t find the solution online, just come back here. Hugo doesn&amp;rsquo;t get much traction so it&amp;rsquo;s hard finding actual solutions :(
+The TRUE FAQ regarding fixes. Make sure to look at the date, though. This might go unupdated in the future. FAQ:
+A theme&amp;rsquo;s layout might override your home page. To counter that, just make an index.</description>
+    </item>
+    
+    <item>
+      <title>Cheat Sheet / Summary</title>
+      <link>https://kuiyajei.github.io/laravel/summary/</link>
+      <pubDate>Mon, 12 Sep 2022 07:49:34 +0200</pubDate>
+      
+      <guid>https://kuiyajei.github.io/laravel/summary/</guid>
+      <description>Back to Home
+This not a full guide. Not everything will be explained in full detail.
+These notes are based on TraversyMedia&amp;rsquo;s Laravel Crash Course | Uploaded: Apr. 26, 2022
+and a Udemy Course
+my notes have references to .NET Core so this might not actually be helpful
+Stuff from laravel broken down Laravel &amp;gt; Structure Laravel &amp;gt; Concepts &amp;amp; Terminologies Laravel &amp;gt; Artisan CLI Laravel &amp;gt; Themes Laravel &amp;gt; Fixes &amp;amp; Troubleshooting Installation for Windows + Some Initial Setup Software you need&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

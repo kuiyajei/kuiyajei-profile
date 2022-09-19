@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>laravel on Jeriのページ</title>
+    <link>https://kuiyajei.github.io/tags/laravel/</link>
+    <description>Recent content in laravel on Jeriのページ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Sep 2022 13:50:15 +0200</lastBuildDate><atom:link href="https://kuiyajei.github.io/tags/laravel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Structure</title>
+      <link>https://kuiyajei.github.io/laravel/structure/</link>
+      <pubDate>Wed, 14 Sep 2022 13:50:15 +0200</pubDate>
+      
+      <guid>https://kuiyajei.github.io/laravel/structure/</guid>
+      <description>Go Back
+Contents General File Structure Overview Note when you&amp;rsquo;re &amp;ldquo;migrating&amp;rdquo; from another framework to this new shithole :) Shortcuts General File Structure Overview Views - resources/views/[name].blade.php Routes - Where we&amp;rsquo;ll load in Views and Controllers (you know how in .NET Core&amp;rsquo;s MVC Controllers have IActionResult? This is pretty similar to that, except the return part&amp;rsquo;s separated to here.) Models - app/Models (Manual) - go to Models folder and create a file there.</description>
+    </item>
+    
+    <item>
+      <title>Concepts</title>
+      <link>https://kuiyajei.github.io/laravel/concepts/</link>
+      <pubDate>Wed, 14 Sep 2022 13:49:57 +0200</pubDate>
+      
+      <guid>https://kuiyajei.github.io/laravel/concepts/</guid>
+      <description>Back to Home
+Laravel Programming Concepts &amp;amp; Terminologies Wild Cards - Similar to asp-route-id Route Constraints - -&amp;gt;where(&#39;param&#39;, &#39;regex stuff here&#39;), useful for validations Debugging - dd - Shows you what&amp;rsquo;s passed in Debugging - ddd - Detailed debug info Directives @ - oh hey, it&amp;rsquo;s like the front-end of .NET Core except you have to put them at the start and end of something like a foreach @php can sometimes be useful if you can&amp;rsquo;t perform stuff on the controller or route Request &amp;amp; Query - Useful for stuff like search functions Layout &amp;amp; Sections - GODDAMN my bRIan not handle dis.</description>
+    </item>
+    
+    <item>
+      <title>Cli</title>
+      <link>https://kuiyajei.github.io/laravel/cli/</link>
+      <pubDate>Wed, 14 Sep 2022 13:49:51 +0200</pubDate>
+      
+      <guid>https://kuiyajei.github.io/laravel/cli/</guid>
+      <description>Go Back
+Attention This is not a complete list.
+Relevant CLI commands for Laravel Write php artisan space&amp;hellip;
+serve - run the site locally make:migration name-of-migration - add migration migrate - migrates the latest db:seed - seed migrate:refresh - can be useful if you suddenly edit or remove data in the seed (don&amp;rsquo;t put a space here) :migrate:refresh &amp;ndash;seed refresh &amp;amp;&amp;amp; seed make:model name-of-model - make a model make:controller name-of-subfolder/nameofController - make a controller </description>
+    </item>
+    
+    <item>
+      <title>Themes</title>
+      <link>https://kuiyajei.github.io/laravel/themes/</link>
+      <pubDate>Tue, 13 Sep 2022 08:00:46 +0200</pubDate>
+      
+      <guid>https://kuiyajei.github.io/laravel/themes/</guid>
+      <description>Go Back nothing here yet :)</description>
+    </item>
+    
+    <item>
+      <title>Cheat Sheet / Summary</title>
+      <link>https://kuiyajei.github.io/laravel/summary/</link>
+      <pubDate>Mon, 12 Sep 2022 07:49:34 +0200</pubDate>
+      
+      <guid>https://kuiyajei.github.io/laravel/summary/</guid>
+      <description>Back to Home
+This not a full guide. Not everything will be explained in full detail.
+These notes are based on TraversyMedia&amp;rsquo;s Laravel Crash Course | Uploaded: Apr. 26, 2022
+and a Udemy Course
+my notes have references to .NET Core so this might not actually be helpful
+Stuff from laravel broken down Laravel &amp;gt; Structure Laravel &amp;gt; Concepts &amp;amp; Terminologies Laravel &amp;gt; Artisan CLI Laravel &amp;gt; Themes Laravel &amp;gt; Fixes &amp;amp; Troubleshooting Installation for Windows + Some Initial Setup Software you need&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

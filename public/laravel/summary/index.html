@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Cheat Sheet / Summary - Jeriのページ</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Back to Home
+This not a full guide. Not everything will be explained in full detail.
+These notes are based on TraversyMedia&rsquo;s Laravel Crash Course | Uploaded: Apr. 26, 2022
+and a Udemy Course
+my notes have references to .NET Core so this might not actually be helpful
+Stuff from laravel broken down Laravel &gt; Structure Laravel &gt; Concepts &amp; Terminologies Laravel &gt; Artisan CLI Laravel &gt; Themes Laravel &gt; Fixes &amp; Troubleshooting Installation for Windows &#43; Some Initial Setup Software you need&hellip;" />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="Cheat Sheet / Summary" />
+<meta property="og:description" content="Back to Home
+This not a full guide. Not everything will be explained in full detail.
+These notes are based on TraversyMedia&rsquo;s Laravel Crash Course | Uploaded: Apr. 26, 2022
+and a Udemy Course
+my notes have references to .NET Core so this might not actually be helpful
+Stuff from laravel broken down Laravel &gt; Structure Laravel &gt; Concepts &amp; Terminologies Laravel &gt; Artisan CLI Laravel &gt; Themes Laravel &gt; Fixes &amp; Troubleshooting Installation for Windows &#43; Some Initial Setup Software you need&hellip;" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kuiyajei.github.io/laravel/summary/" /><meta property="article:section" content="laravel" />
+<meta property="article:published_time" content="2022-09-12T07:49:34+02:00" />
+<meta property="article:modified_time" content="2022-09-12T07:49:34+02:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Cheat Sheet / Summary"/>
+<meta name="twitter:description" content="Back to Home
+This not a full guide. Not everything will be explained in full detail.
+These notes are based on TraversyMedia&rsquo;s Laravel Crash Course | Uploaded: Apr. 26, 2022
+and a Udemy Course
+my notes have references to .NET Core so this might not actually be helpful
+Stuff from laravel broken down Laravel &gt; Structure Laravel &gt; Concepts &amp; Terminologies Laravel &gt; Artisan CLI Laravel &gt; Themes Laravel &gt; Fixes &amp; Troubleshooting Installation for Windows &#43; Some Initial Setup Software you need&hellip;"/>
+<script src="https://kuiyajei.github.io/js/feather.min.js"></script>
+	
+	
+        <link href="https://kuiyajei.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://kuiyajei.github.io/css/main.ac08a4c9714baa859217f92f051deb58df2938ec352b506df655005dcaf98cc0.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://kuiyajei.github.io/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css"  disabled />
+	
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://kuiyajei.github.io/">Jeriのページ</a>
+	</div>
+	<nav>
+		
+		<a href="https://kuiyajei.github.io/">Home</a>
+		
+		<a href="https://kuiyajei.github.io/profile/about">About</a>
+		
+		<a href="https://kuiyajei.github.io/tags">Tags</a>
+		
+		| <a id="dark-mode-toggle" onclick="toggleTheme()" href=""></a>
+		<script src="https://kuiyajei.github.io/js/themetoggle.js"></script>
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Cheat Sheet / Summary</h1>
+			<div class="meta">Posted on Sep 12, 2022</div>
+		</div>
+		
+
+		<section class="body">
+			<p><a href="https://kuiyajei.github.io/" title="Back to Home">Back to Home</a></p>
+<h1 id="this-not-a-full-guide">This not a full guide.</h1>
+<p>Not everything will be explained in full detail.</p>
+<!-- ![floppa](/laravel/images/floppa_poly.png)  <br/> -->
+<p>These notes are based on <a href="https://youtu.be/MYyJ4PuL4pY" target="_blank">TraversyMedia&rsquo;s Laravel Crash Course</a> | Uploaded: Apr. 26, 2022<br>
+and a <a href="https://www.udemy.com/course/laravel-build-complete-inventory-management-system/" target="_blank">Udemy Course</a></p>
+<p><em>my notes have references to .NET Core so this might not actually be helpful</em></p>
+<h2 id="stuff-from-laravel-broken-down">Stuff from laravel broken down</h2>
+<ul>
+<li><a href="https://kuiyajei.github.io/laravel/structure/" title="Laravel &gt; Structure">Laravel &gt; Structure</a></li>
+<li><a href="https://kuiyajei.github.io/laravel/concepts/" title="Laravel &gt; Concepts">Laravel &gt; Concepts &amp; Terminologies</a></li>
+<li><a href="https://kuiyajei.github.io/laravel/cli/" title="Laravel &gt; CLI">Laravel &gt; Artisan CLI</a></li>
+<li><a href="https://kuiyajei.github.io/laravel/themes/" title="Laravel &gt; Themes">Laravel &gt; Themes</a></li>
+<li><a href="https://kuiyajei.github.io/laravel/fixes/" title="Laravel &gt; Fixes &amp; Troubleshooting">Laravel &gt; Fixes &amp; Troubleshooting</a></li>
+</ul>
+<h2 id="installation-for-windows--some-initial-setup">Installation for Windows + <em>Some</em> Initial Setup</h2>
+<hr>
+<p>Software you need&hellip;</p>
+<ul>
+<li>something to run Linux commands, so install GitBash (the documentation tells you to get Docker but don&rsquo;t mind that)</li>
+<li>Composer</li>
+<li>to run the following in a terminal - assuming you&rsquo;re going to use Laravel for quite a while and it&rsquo;s not just a one time thing:
+<code>composer global require laravel/installer</code>.
+Then in the directory where you want to work on, open a terminal there and <code>laravel new name-of-your-app</code>. If it&rsquo;s the latter, then do this instead of the above <code>composer create-project laravel/laravel name-of-your-app</code>.</li>
+<li>Laravel Breeze: because you&rsquo;ll most likely use it for simple default login/auth
+<ol>
+<li>) inside your project &gt; terminal &gt; type in <code>composer require laravel/breeze --dev</code></li>
+<li>) followed by <code>php artisan breeze:install</code></li>
+<li>) followed by <code>npm install</code></li>
+<li>) followed by <code>npm run dev</code> then stop that shet in the terminal (Ctrl + C &gt; y)</li>
+<li>) followed by <code>php artisan migrate</code> when your DB&rsquo;s connected</li>
+</ol>
+</li>
+</ul>
+<h3 id="importing-an-existing-project--db-cleaning">Importing an existing project / DB Cleaning</h3>
+<p>Assuming that you have done the initial installations and exported the files (if zipped)&hellip;</p>
+<ol>
+<li>Open XAMPP and start Apache + MySQL</li>
+<li>Databases tab &gt; Create</li>
+<li>Imports tab</li>
+<li>Get <code>.sql</code> file  &gt; Choose that as file to import</li>
+<li>Inside <code>.env</code> &gt; <code>DB_DATABASE=name-of-newly-created-db</code></li>
+<li>Inside project file enter the following in a terminal
+<ol>
+<li><code>php artisan config:cache</code></li>
+<li><code>php artisan cache:clear</code></li>
+<li><code>php artisan view:clear</code></li>
+<li><code>php artisan migrate</code></li>
+<li>You can also <code>php artisan db:wipe</code> and steps 1-4 in case you&rsquo;re worried about making changes and the whole thing just doesn&rsquo;t work for some reason.</li>
+</ol>
+</li>
+</ol>
+<h3 id="optional-but-cool-stuff-im-not-familiar-with-even-outside-of-the-regular-mvc-sht">Optional but cool (stuff I&rsquo;m not familiar with even outside of the regular MVC sh*t)</h3>
+<hr>
+<ul>
+<li><strong>Faker</strong> - I really am not familiar with this <a href="https://youtu.be/MYyJ4PuL4pY?t=3791" target="_blank">so&hellip;</a>
+<ul>
+<li><strong>php artisan make:factory name-of-factory</strong></li>
+<li><strong>Example:</strong> <code>'title' =&gt; $this -&gt; faker -&gt; sentence(),</code>
+<ul>
+<li>sentence can be replaced by other formats found <a href="https://github.com/fzaninotto/Faker#table-of-contents" target="_blank">here</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="useful-extensions">Useful extensions</h3>
+<hr>
+<ul>
+<li><strong>PHP Namespace Resolver</strong> - Really useful for importing libraries and classes that act like VS&rsquo; auto-fill feature</li>
+<li><strong>PHP Intelephense</strong> - Good for PHP dev in general</li>
+</ul>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="https://kuiyajei.github.io/tags/laravel">laravel</a></li>
+					
+					<li><a href="https://kuiyajei.github.io/tags/summary">summary</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+  <div style="display:flex"><a class="soc" href="https://github.com/athul/archie" title="GitHub"><i data-feather="github"></i></a>
+    <a class="border"></a><a class="soc" href="https://twitter.com/athulcajay/" title="Twitter"><i data-feather="twitter"></i></a>
+    <a class="border"></a><a class="soc" href="https://gitlab.com/athul/" title="GitLab"><i data-feather="gitlab"></i></a>
+    <a class="border"></a></div>
+  <div class="footer-info">
+    2022  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+
+<script>
+  feather.replace()
+</script></div>
+    </body>
+</html>

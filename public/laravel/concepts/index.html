@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Concepts - Jeriのページ</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Back to Home
+Laravel Programming Concepts &amp; Terminologies Wild Cards - Similar to asp-route-id Route Constraints - -&gt;where(&#39;param&#39;, &#39;regex stuff here&#39;), useful for validations Debugging - dd - Shows you what&rsquo;s passed in Debugging - ddd - Detailed debug info Directives @ - oh hey, it&rsquo;s like the front-end of .NET Core except you have to put them at the start and end of something like a foreach @php can sometimes be useful if you can&rsquo;t perform stuff on the controller or route Request &amp; Query - Useful for stuff like search functions Layout &amp; Sections - GODDAMN my bRIan not handle dis." />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="Concepts" />
+<meta property="og:description" content="Back to Home
+Laravel Programming Concepts &amp; Terminologies Wild Cards - Similar to asp-route-id Route Constraints - -&gt;where(&#39;param&#39;, &#39;regex stuff here&#39;), useful for validations Debugging - dd - Shows you what&rsquo;s passed in Debugging - ddd - Detailed debug info Directives @ - oh hey, it&rsquo;s like the front-end of .NET Core except you have to put them at the start and end of something like a foreach @php can sometimes be useful if you can&rsquo;t perform stuff on the controller or route Request &amp; Query - Useful for stuff like search functions Layout &amp; Sections - GODDAMN my bRIan not handle dis." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kuiyajei.github.io/laravel/concepts/" /><meta property="article:section" content="laravel" />
+<meta property="article:published_time" content="2022-09-14T13:49:57+02:00" />
+<meta property="article:modified_time" content="2022-09-14T13:49:57+02:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Concepts"/>
+<meta name="twitter:description" content="Back to Home
+Laravel Programming Concepts &amp; Terminologies Wild Cards - Similar to asp-route-id Route Constraints - -&gt;where(&#39;param&#39;, &#39;regex stuff here&#39;), useful for validations Debugging - dd - Shows you what&rsquo;s passed in Debugging - ddd - Detailed debug info Directives @ - oh hey, it&rsquo;s like the front-end of .NET Core except you have to put them at the start and end of something like a foreach @php can sometimes be useful if you can&rsquo;t perform stuff on the controller or route Request &amp; Query - Useful for stuff like search functions Layout &amp; Sections - GODDAMN my bRIan not handle dis."/>
+<script src="https://kuiyajei.github.io/js/feather.min.js"></script>
+	
+	
+        <link href="https://kuiyajei.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://kuiyajei.github.io/css/main.ac08a4c9714baa859217f92f051deb58df2938ec352b506df655005dcaf98cc0.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://kuiyajei.github.io/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css"  disabled />
+	
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://kuiyajei.github.io/">Jeriのページ</a>
+	</div>
+	<nav>
+		
+		<a href="https://kuiyajei.github.io/">Home</a>
+		
+		<a href="https://kuiyajei.github.io/profile/about">About</a>
+		
+		<a href="https://kuiyajei.github.io/tags">Tags</a>
+		
+		| <a id="dark-mode-toggle" onclick="toggleTheme()" href=""></a>
+		<script src="https://kuiyajei.github.io/js/themetoggle.js"></script>
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Concepts</h1>
+			<div class="meta">Posted on Sep 14, 2022</div>
+		</div>
+		
+
+		<section class="body">
+			<p><a href="https://kuiyajei.github.io/laravel/summary/" title="Go Back.">Back to Home</a></p>
+<h2 id="laravel-programming-concepts--terminologies">Laravel Programming Concepts &amp; Terminologies</h2>
+<hr>
+<ul>
+<li><strong>Wild Cards</strong> - Similar to asp-route-id</li>
+<li><strong>Route Constraints</strong> - <code>-&gt;where('param', 'regex stuff here')</code>, useful for validations</li>
+<li><strong>Debugging - dd</strong> - Shows you what&rsquo;s passed in</li>
+<li><strong>Debugging - ddd</strong> - Detailed debug info</li>
+<li><strong>Directives @</strong> - oh hey, it&rsquo;s like the front-end of .NET Core except you have to put them at the start and end of something like a foreach
+<ul>
+<li><em>@php</em> can sometimes be useful if you can&rsquo;t perform stuff on the controller or route</li>
+</ul>
+</li>
+<li><strong>Request &amp; Query</strong> - <strong>Useful for stuff like search functions</strong></li>
+<li><strong>Layout &amp; Sections</strong> - GODDAMN my bRIan not handle dis. This thing deserves its <a href="https://kuiyajei.github.io/laravel/components/" title=":)">own page</a>
+<ul>
+<li>In the layout:
+<ul>
+<li><code>@yield('matching-content-name')</code> this is where you want the view to be displayed at when the view extends the layout</li>
+</ul>
+</li>
+<li>In the View extending the layout:
+<ul>
+<li><code>@extends('layout-name')</code> put this on the very top</li>
+<li><code>@section('content-name')</code> and <code>@endsection</code> then wrap that around the content you want as a section</li>
+</ul>
+</li>
+<li><strong>Blade Components</strong> - useful if you want to pass in stuff&hellip;? <a href="https://www.educba.com/laravel-components/" target="_blank">[link]</a></li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="https://kuiyajei.github.io/tags/laravel">laravel</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+  <div style="display:flex"><a class="soc" href="https://github.com/athul/archie" title="GitHub"><i data-feather="github"></i></a>
+    <a class="border"></a><a class="soc" href="https://twitter.com/athulcajay/" title="Twitter"><i data-feather="twitter"></i></a>
+    <a class="border"></a><a class="soc" href="https://gitlab.com/athul/" title="GitLab"><i data-feather="gitlab"></i></a>
+    <a class="border"></a></div>
+  <div class="footer-info">
+    2022  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+
+<script>
+  feather.replace()
+</script></div>
+    </body>
+</html>

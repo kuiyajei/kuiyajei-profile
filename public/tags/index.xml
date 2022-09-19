@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Jeriのページ</title>
+    <link>https://kuiyajei.github.io/tags/</link>
+    <description>Recent content in Tags on Jeriのページ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Sep 2022 13:50:15 +0200</lastBuildDate><atom:link href="https://kuiyajei.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>laravel</title>
+      <link>https://kuiyajei.github.io/tags/laravel/</link>
+      <pubDate>Wed, 14 Sep 2022 13:50:15 +0200</pubDate>
+      
+      <guid>https://kuiyajei.github.io/tags/laravel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fix</title>
+      <link>https://kuiyajei.github.io/tags/fix/</link>
+      <pubDate>Tue, 13 Sep 2022 14:45:08 +0200</pubDate>
+      
+      <guid>https://kuiyajei.github.io/tags/fix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://kuiyajei.github.io/tags/hugo/</link>
+      <pubDate>Tue, 13 Sep 2022 14:45:08 +0200</pubDate>
+      
+      <guid>https://kuiyajei.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>summary</title>
+      <link>https://kuiyajei.github.io/tags/summary/</link>
+      <pubDate>Tue, 13 Sep 2022 14:45:08 +0200</pubDate>
+      
+      <guid>https://kuiyajei.github.io/tags/summary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>profile</title>
+      <link>https://kuiyajei.github.io/tags/profile/</link>
+      <pubDate>Tue, 13 Sep 2022 14:31:49 +0200</pubDate>
+      
+      <guid>https://kuiyajei.github.io/tags/profile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Code</title>
+      <link>https://kuiyajei.github.io/tags/code/</link>
+      <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://kuiyajei.github.io/tags/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Procrastinating</title>
+      <link>https://kuiyajei.github.io/tags/procrastinating/</link>
+      <pubDate>Sun, 18 Mar 2018 12:13:32 +0530</pubDate>
+      
+      <guid>https://kuiyajei.github.io/tags/procrastinating/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Space</title>
+      <link>https://kuiyajei.github.io/tags/space/</link>
+      <pubDate>Sun, 18 Mar 2018 12:13:30 +0530</pubDate>
+      
+      <guid>https://kuiyajei.github.io/tags/space/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

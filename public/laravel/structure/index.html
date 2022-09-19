@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Structure - Jeriのページ</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Go Back
+Contents General File Structure Overview Note when you&rsquo;re &ldquo;migrating&rdquo; from another framework to this new shithole :) Shortcuts General File Structure Overview Views - resources/views/[name].blade.php Routes - Where we&rsquo;ll load in Views and Controllers (you know how in .NET Core&rsquo;s MVC Controllers have IActionResult? This is pretty similar to that, except the return part&rsquo;s separated to here.) Models - app/Models (Manual) - go to Models folder and create a file there." />
+	<meta property="og:image" content=""/>
+	<meta property="og:title" content="Structure" />
+<meta property="og:description" content="Go Back
+Contents General File Structure Overview Note when you&rsquo;re &ldquo;migrating&rdquo; from another framework to this new shithole :) Shortcuts General File Structure Overview Views - resources/views/[name].blade.php Routes - Where we&rsquo;ll load in Views and Controllers (you know how in .NET Core&rsquo;s MVC Controllers have IActionResult? This is pretty similar to that, except the return part&rsquo;s separated to here.) Models - app/Models (Manual) - go to Models folder and create a file there." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kuiyajei.github.io/laravel/structure/" /><meta property="article:section" content="laravel" />
+<meta property="article:published_time" content="2022-09-14T13:50:15+02:00" />
+<meta property="article:modified_time" content="2022-09-14T13:50:15+02:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Structure"/>
+<meta name="twitter:description" content="Go Back
+Contents General File Structure Overview Note when you&rsquo;re &ldquo;migrating&rdquo; from another framework to this new shithole :) Shortcuts General File Structure Overview Views - resources/views/[name].blade.php Routes - Where we&rsquo;ll load in Views and Controllers (you know how in .NET Core&rsquo;s MVC Controllers have IActionResult? This is pretty similar to that, except the return part&rsquo;s separated to here.) Models - app/Models (Manual) - go to Models folder and create a file there."/>
+<script src="https://kuiyajei.github.io/js/feather.min.js"></script>
+	
+	
+        <link href="https://kuiyajei.github.io/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="https://kuiyajei.github.io/css/main.ac08a4c9714baa859217f92f051deb58df2938ec352b506df655005dcaf98cc0.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="https://kuiyajei.github.io/css/dark.726cd11ca6eb7c4f7d48eb420354f814e5c1b94281aaf8fd0511c1319f7f78a4.css"  disabled />
+	
+	
+	
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="https://kuiyajei.github.io/">Jeriのページ</a>
+	</div>
+	<nav>
+		
+		<a href="https://kuiyajei.github.io/">Home</a>
+		
+		<a href="https://kuiyajei.github.io/profile/about">About</a>
+		
+		<a href="https://kuiyajei.github.io/tags">Tags</a>
+		
+		| <a id="dark-mode-toggle" onclick="toggleTheme()" href=""></a>
+		<script src="https://kuiyajei.github.io/js/themetoggle.js"></script>
+		
+	</nav>
+</header>
+
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">Structure</h1>
+			<div class="meta">Posted on Sep 14, 2022</div>
+		</div>
+		
+
+		<section class="body">
+			<p><a href="https://kuiyajei.github.io/laravel/summary/" title="getdafucoutahere">Go Back</a></p>
+<h1 id="contents">Contents</h1>
+<ul>
+<li><a href="#overview">General File Structure Overview</a></li>
+<li><a href="#note">Note when you&rsquo;re &ldquo;migrating&rdquo; from another framework to this new shithole :)</a></li>
+<li><a href="#shortcuts">Shortcuts</a></li>
+</ul>
+<div id="overview"></div>
+<h1 id="general-file-structure-overview">General File Structure Overview</h1>
+<hr>
+<ul>
+<li><strong>Views</strong> - resources/views/[name].blade.php</li>
+<li><strong>Routes</strong> - Where we&rsquo;ll load in Views and Controllers <em>(you know how in .NET Core&rsquo;s MVC Controllers have IActionResult? This is pretty similar to that, except the return part&rsquo;s separated to here.)</em></li>
+<li><strong>Models</strong> - app/Models
+<ul>
+<li>(Manual) - go to Models folder and create a file there. You need to add other stuff like namespace and A LOT of other required stuff, but like, w h y . . . ? When you have&hellip;</li>
+<li>(Fancy/Best) - <code>php artisan make:model name-of-model</code></li>
+</ul>
+</li>
+<li><strong>Controller</strong> - <code>php artisan make:controller name-of-subfolder/nameofController</code>. You&rsquo;ll find the controller inside <em>app &gt; Http &gt; Controllers</em>.
+<ul>
+<li>To use this go to <code>routes &gt; web.php</code> and <code>use App\Http\Controllers</code></li>
+<li>OR if you have the cool extensions it&rsquo;ll import the appropriate files for you as you type the code</li>
+<li><code>Route::get('/name-of-view', [NameOfController::class, 'MethodName']);</code> for singular routes</li>
+<li><code>Route::controller(testController::class)-&gt;group(function () { });</code> and inside the curly braces <code>Route::get('/name-of-view','MethodName')-&gt;('name-for-long-URLs.page');</code> to group a controller with multiple methods</li>
+</ul>
+</li>
+<li><strong>Middleware</strong> - the security guard / validations boi; can be used in routing;found in Http/Middleware</li>
+<li><strong>Database Setup</strong>
+<ol>
+<li>) config/database.php <code>'default' =&gt; env('DB_CONNECTION', 'mysql'),</code> mysql is replacable if need be
+<ol>
+<li>) you can configure other stuff in &ldquo;.env&rdquo;, and <a href="https://youtu.be/MYyJ4PuL4pY?t=2754">click here to setup your MySQL</a> unless you have&hellip;</li>
+</ol>
+</li>
+<li>) XAMPP, in which case all you need to do is run APACHE and MySQL. MySQL -&gt; click Admin on the UI</li>
+<li>) Make sure to edit DB_DATABASE in &ldquo;.env&rdquo; if you have a different name for the database you&rsquo;re going to use</li>
+</ol>
+</li>
+<li><strong>Migrations</strong> - database/migrations
+<ul>
+<li><em><strong>REMINDER:</strong></em> The tutorial at first shows you to migrate and seed, and not just migrate the model.</li>
+<li><em><strong>also:</strong></em> From the way it looks, it migrates EVERYTHING inside the migrations folder - at least initially (this is just an assumption)</li>
+</ul>
+</li>
+<li><strong>Seeding</strong> - database/seeders</li>
+<li><strong>Themes</strong> - setup&rsquo;s long, click <a href="https://kuiyajei.github.io/laravel/themes/" title="(link)">(here)</a> when you&rsquo;re ready | <a href="https://youtu.be/MYyJ4PuL4pY?t=4318" target="_blank">[video link]</a></li>
+</ul>
+<div id="note"></div>
+<h2 id="something-to-note-when-youre-migrating-from-another-framework-to-this-new-shithole-">Something to note when you&rsquo;re <em>&ldquo;migrating&rdquo;</em> from another framework to this new shithole :)</h2>
+<ul>
+<li>Columns in a table are declared in the migrations</li>
+<li>Tables/Entities are migrated when you EXPLICITLY type in <code>make:migration create_NAME-OF-YOUR-MODELs_table</code>, yes, plural
+<ul>
+<li>OR when you&rsquo;re just creating a new model <code>make:model NameOfModel -m</code> // I think -m means migration</li>
+<li>TRY this out as well <code>make:model -mrc EntitysName</code> &lt;- the model will become singular but plural when migrated
+<ul>
+<li>it <em>should</em> make a controller with resource functions in it + a model</li>
+<li><a href="https://youtu.be/2bz5eleBj98?t=3600" target="_blank">[video link]</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+		</section>
+
+		<div class="post-tags">
+			
+			
+			<nav class="nav tags">
+				<ul class="tags">
+					
+					<li><a href="https://kuiyajei.github.io/tags/laravel">laravel</a></li>
+					
+				</ul>
+			</nav>
+			
+			
+		</div>
+	</article>
+</main>
+<footer>
+  <div style="display:flex"><a class="soc" href="https://github.com/athul/archie" title="GitHub"><i data-feather="github"></i></a>
+    <a class="border"></a><a class="soc" href="https://twitter.com/athulcajay/" title="Twitter"><i data-feather="twitter"></i></a>
+    <a class="border"></a><a class="soc" href="https://gitlab.com/athul/" title="GitLab"><i data-feather="gitlab"></i></a>
+    <a class="border"></a></div>
+  <div class="footer-info">
+    2022  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+
+<script>
+  feather.replace()
+</script></div>
+    </body>
+</html>

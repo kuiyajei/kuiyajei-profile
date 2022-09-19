@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Profiles on Jeriのページ</title>
+    <link>https://kuiyajei.github.io/profile/</link>
+    <description>Recent content in Profiles on Jeriのページ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Sep 2022 14:31:49 +0200</lastBuildDate><atom:link href="https://kuiyajei.github.io/profile/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Resume</title>
+      <link>https://kuiyajei.github.io/profile/resume/</link>
+      <pubDate>Tue, 13 Sep 2022 14:31:49 +0200</pubDate>
+      
+      <guid>https://kuiyajei.github.io/profile/resume/</guid>
+      <description>Back to Home nothing here yet</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://kuiyajei.github.io/profile/about/</link>
+      <pubDate>Sun, 11 Sep 2022 18:27:52 +0200</pubDate>
+      
+      <guid>https://kuiyajei.github.io/profile/about/</guid>
+      <description>Back to Home nothing here yet heh </description>
+    </item>
+    
+  </channel>
+</rss>
